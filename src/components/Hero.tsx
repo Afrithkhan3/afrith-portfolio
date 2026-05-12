@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { personal, stats } from "../data/portfolio";
-import afrithPhoto from "../assets/afrith.jpg";
+import afrithPhoto from "../assets/afrith.webp";
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 60 },
