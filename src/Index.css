@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Outfit:wght@200;300;400;500;600&family=JetBrains+Mono:wght@200;300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --gold: #c8a96e;
+  --gold2: #e8cc9a;
+  --gold3: rgba(200,169,110,0.15);
+  --gold4: rgba(200,169,110,0.06);
+  --border: rgba(255,255,255,0.07);
+  --border2: rgba(255,255,255,0.12);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #050508;
+  color: #f0ede8;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: #050508; }
+::-webkit-scrollbar-thumb { background: var(--gold); }
+
+.noise-overlay {
+  position: fixed; inset: 0; pointer-events: none; z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.5;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(200,169,110,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200,169,110,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+}
+
+.section-border { border-top: 1px solid var(--border); }
+
+.chip {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #9a9898;
+  border: 1px solid var(--border2);
+  padding: 6px 16px;
+  background: #13131e;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  display: inline-block;
+  cursor: default;
+}
+.chip:hover, .chip.active {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: var(--gold4);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-2 { transition-delay: 0.2s; }
+
+.cursor {
+  position: fixed; top:0; left:0; width:8px; height:8px;
+  background: var(--gold); border-radius:50%; pointer-events:none; z-index:9999;
+  transform:translate(-50%,-50%);
+}
+.cursor-ring {
+  position:fixed; top:0; left:0; width:36px; height:36px;
+  border: 1px solid rgba(200,169,110,0.4); border-radius:50%;
+  pointer-events:none; z-index:9998; transform:translate(-50%,-50%);
+  transition: width 0.3s, height 0.3s, opacity 0.2s;
+}
+.cursor-ring.big { width:60px; height:60px; opacity:0.4; }
