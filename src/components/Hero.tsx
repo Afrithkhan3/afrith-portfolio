@@ -5,8 +5,9 @@ import afrithPhoto from "../assets/afrith.webp";
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 60 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 1, delay, ease: [0.16, 1, 0.3, 1] },
+  transition: { duration: 1, delay, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] },
 });
+ 
 
 export default function Hero() {
   return (
@@ -28,7 +29,7 @@ export default function Hero() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, rgba(5,5,8,0.75) 55%, rgba(5,5,8,0.3) 100%)",
+              "linear-gradient(to right, rgba(5,5,8,0.35) 55%, rgba(5,5,8,0.3) 100%)",
           }}
         />
         <div
