@@ -2,7 +2,6 @@ export const personal = {
   name: "Mohamed Afrith Khan",
   initials: "MAK",
   title: "Software Engineer",
-  subtitle: "PHP / Laravel · MERN Stack · IT Support",
   email: "afrith.arf@gmail.com",
   phone: "+94 769 986 699",
   linkedin: "https://linkedin.com/in/mohamedafrith-khan-7a59b1242/",
@@ -11,8 +10,7 @@ export const personal = {
   dob: "09 August 1999",
   nationality: "Sri Lankan",
   relocate: ["UAE", "Qatar", "Saudi Arabia", "Kuwait", "Oman"],
-  summary:
-    "Software engineer with a BSc (Hons) in Information Technology from SLIIT, combining hands-on web development in PHP & Laravel with international remote IT support for a Dubai-based company. I build scalable, efficient systems and keep infrastructure running.",
+  summary: "Software engineer crafting scalable web applications with PHP & Laravel, paired with international IT support experience across UAE infrastructure.",
 };
 
 export const stats = [
@@ -76,13 +74,7 @@ export const skillGroups = [
   },
   {
     label: "IT Support",
-    skills: [
-      "Microsoft 365",
-      "Windows Admin",
-      "DNS / LAN / Wi-Fi",
-      "Endpoint Security",
-      "Remote Support",
-    ],
+    skills: ["Microsoft 365", "Windows Admin", "DNS / LAN / Wi-Fi", "Endpoint Security", "Remote Support"],
     highlight: [],
   },
 ];
@@ -146,4 +138,85 @@ export const marqueeItems = [
   "Laravel", "React.js", "Node.js", "PHP", "MySQL", "MongoDB",
   "Python", "TensorFlow", "REST APIs", "Git", "AWS", "Microsoft 365",
   "TypeScript", "Firebase", "Figma", "Postman",
+];
+
+export const certifications = [
+  {
+    title: "SkillUP 101 — Java",
+    issuer: "EDUCBA",
+    date: "February 2024",
+    id: "5V8DDGJ9T",
+    url: "https://www.educba.com/certificate/?c=5V8DDGJ9T",
+    color: "#0077B5",
+  },
+  {
+    title: "Oracle SQL Concepts & Commands",
+    issuer: "EDUCBA",
+    date: "February 2024",
+    id: "TL0BGXE89",
+    url: "https://www.educba.com/certificate/?c=TL0BGXE89",
+    color: "#0077B5",
+  },
+  {
+    title: "Java Programming",
+    issuer: "Great Learning Academy",
+    date: "February 2024",
+    id: "GL-JAVA-2024",
+    url: "https://www.mygreatlearning.com/certificate/verify",
+    color: "#E8490F",
+  },
+  {
+    title: "CS302: Software Engineering",
+    issuer: "Saylor Academy",
+    date: "March 2024",
+    id: "7885832700AK",
+    url: "https://learn.saylor.org/",
+    color: "#4A90D9",
+  },
+  {
+    title: "FITEQ Coaching Course — Level Intro",
+    issuer: "Fédération Internationale de Teqball",
+    date: "May 2021",
+    id: "FLTWSCQLDB",
+    url: "https://www.fiteq.org/",
+    color: "#FF6B00",
+  },
+  {
+    title: "FITEQ Referee Course — Level C",
+    issuer: "Fédération Internationale de Teqball",
+    date: "May 2021",
+    id: "TLLDKSHDGZ",
+    url: "https://www.fiteq.org/",
+    color: "#FF6B00",
+  },
+];
+
+export const techSkills = [
+  { name: "PHP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" },
+  { name: "Laravel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" },
+  { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+  { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+  { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+  { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+  { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+  { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
+  { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
+  { name: "C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+  { name: "Android", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" },
+];
+
+export const coreSkills = [
+  { name: "PHP & Laravel Development", pct: 85 },
+  { name: "React.js & Frontend Development", pct: 78 },
+  { name: "Database Design & Management", pct: 82 },
+  { name: "IT Support & Network Troubleshooting", pct: 88 },
+  { name: "REST API Development", pct: 80 },
+  { name: "Version Control (Git)", pct: 85 },
 ];
