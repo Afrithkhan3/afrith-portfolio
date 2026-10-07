@@ -142,6 +142,14 @@ export const marqueeItems = [
 
 export const certifications = [
   {
+  title: "Technical Support Fundamentals",
+  issuer: "Google · Coursera",
+  date: "October 2026",
+  id: "OJXOXF2FUFES",
+  url: "https://coursera.org/verify/OJXOXF2FUFES",
+  color: "#4285F4",
+},
+  {
     title: "SkillUP 101 — Java",
     issuer: "EDUCBA",
     date: "February 2024",
