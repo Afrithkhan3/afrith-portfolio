@@ -142,7 +142,7 @@ export const marqueeItems = [
 
 export const certifications = [
   {
-  title: "Technical Support Fundamentals",
+  title: "Information Technical Support Fundamentals",
   issuer: "Google · Coursera",
   date: "October 2026",
   id: "OJXOXF2FUFES",
