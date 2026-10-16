@@ -14,7 +14,7 @@ export const personal = {
 };
 
 export const stats = [
-  { num: "2+", label: "Years", sub: "Professional experience" },
+  { num: "4+", label: "Years", sub: "Professional experience" },
   { num: "5+", label: "Projects", sub: "Shipped end-to-end" },
   { num: "2", label: "Roles", sub: "Dev + IT Support" },
   { num: "4", label: "Languages", sub: "EN · TA · AR · SI" },
@@ -23,7 +23,7 @@ export const stats = [
 export const experiences = [
   {
     year: "2024",
-    period: "Oct 2024 — Dec 2025",
+    period: "Oct 2024 — Sep 2026",
     location: "Dubai, UAE — Remote",
     company: "Velo Cucina Home Furniture Trading Co LLC",
     role: "IT Support Engineer",
