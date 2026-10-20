@@ -142,6 +142,14 @@ export const marqueeItems = [
 
 export const certifications = [
   {
+  title: "System Administration and IT Infrastructure Services",
+  issuer: "Google · Coursera",
+  date: "October 2026",
+  id: "OH9JQRZZXLKF",
+  url: "https://coursera.org/verify/OH9JQRZZXLKF",
+  color: "#4285F4",
+},
+  {
   title: "Information Technical Support Fundamentals",
   issuer: "Google · Coursera",
   date: "October 2026",
@@ -149,6 +157,7 @@ export const certifications = [
   url: "https://coursera.org/verify/OJXOXF2FUFES",
   color: "#4285F4",
 },
+
   {
     title: "SkillUP 101 — Java",
     issuer: "EDUCBA",
